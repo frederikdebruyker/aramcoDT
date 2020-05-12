@@ -1,0 +1,5 @@
+/* open for potential additional css */
+body { background:lightgray !important;}
+/* div { background-image: linear-gradient(white, gray) !important;} */
+.focus { background-image: linear-gradient(white, gray); font-style: Bold; color:white; font-size: x-large !important;}
+.organization { font-style:bold; font-size: xx-large}
