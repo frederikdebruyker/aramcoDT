@@ -4,25 +4,24 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Web Visualization Dashboard (Latitude)</title>
+  <title>Aramco Americas Digital Transformation</title>
 
   <!-- Bring in our bootstrap stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
+
 
   <!-- Cascading stylesheet if required -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- icons -->
-  <link href="css\weather-icons.css" rel="stylesheet">
 
 </head>
 
@@ -30,83 +29,49 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
-      <a class="navbar-brand bg-info text-white ml-1 font-weight-bold p-2" href="index.html">Latitude</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav align-self-end">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="MaxTemperature.html">Max Temperature</a>
-              <a class="dropdown-item" href="Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Comparison.html">Comparison</a>
-          </li>
-          <li class="nav-item justify-content-end">
-            <a class="nav-link" href="Data.html">Data</a>
-          </li>
-          <li class="nav-item justify-content-end">
-            <a class="nav-link" href="References.html">References</a>
-          </li>
-        </ul>
+      <div class="row col-12">
+        <div class="logo">
+          <a href="https://www.aramcoamericas.com"><img class="img-fluid" src="assets/images/sitelogo.png" alt="Aramco Americas"
+              text="Aramco Americas"></a>
+        </div>
+        <div class="title col-10">
+          <div class="organization col-sm-12 col-md-12">
+            <span>Digital Transformation</span>
+          </div>
+          <div class="navigation col-sm-0 col-md-12">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Periodic.html">Periodic Technology Reports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Initiatives.html">DT Initiatives</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Conferences.html">Conference Reporting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Feedback.html">Feedback</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
 
+  <!-- main topics -->
   <div class="container-fluid">
-    <div class="row p-4 bg-light">
-      <!--Normally these medium columns go 8/4 wide on small screen sizes-->
-      <div class="col-sm-12 col-md-7 m-2 p-4">
-        <h2 class="text-info"><i class="wi wi-windy pr-2"></i>Wind Speed</h2>
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <a href="Humidity.html"><img class="img-fluid width:10% height:10% float-left" src="assets/images/Fig4.png"
-                alt="Responsive image"></a>
-          </div>
-          <div class="col-sm-12 col-md-12">
-            <p>Less cloudiness with higher windspeeds seems like a logical conclusion. The more dense band between +40
-              and +60 at higher windspeeds is interesting.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-4 m-2 p-4">
-        <h3 class="text-info ml-2">Visualizations</h3>
-        <div class="container">
-          <div class="row">
-            <!--Normally these medium columns go full wide on small screen sizes-->
-            <div class="col-12 col-sm-6 col-md-6">
-              <a href="MaxTemperature.html"><img class="img-fluid width:10% height:20%" src="assets/images/Fig1.png"
-                  alt="Responsive image"></a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6">
-              <a href="Humidity.html"><img class="img-fluid width:10% height:20%" src="assets/images/Fig2.png"
-                  alt="Responsive image"></a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6">
-              <a href="Cloudiness.html"><img class="img-fluid width:10% height:20%" src="assets/images/Fig3.png"
-                  alt="Responsive image"></a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6">
-              <a href="WindSpeed.html"><img class="img-fluid width:10% height:20% border border-info"
-                  src="assets/images/Fig4.png" alt="Responsive image"></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- main row -->
+    <div class="row p-2">
+
     </div>
   </div>
-
 </body>
 
 </html>
